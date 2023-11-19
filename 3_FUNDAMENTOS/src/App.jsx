@@ -32,7 +32,7 @@ function App() {
 
     <ManageData />
       
-      <ListRender />
+    <ListRender />
   
       </div>
        
