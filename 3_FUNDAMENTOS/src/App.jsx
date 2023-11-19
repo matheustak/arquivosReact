@@ -1,8 +1,9 @@
 
 import './App.css';
 
-
-import City from "./assets/city.jpg";
+//components
+import City from './assets/city.jpg';
+import ManageData from './components/ManageData';
 
 function App() {
  
@@ -26,10 +27,14 @@ function App() {
       </div>
 
 
+
+    <ManageData />
+      
+  
       </div>
-     
+       
    
-  )
-}
+  );
+};
 
 export default App
