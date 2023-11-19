@@ -4,7 +4,7 @@ const ListRender = () => {
  const [list] = useState(["Matheus","Pedro","Josias","Maria"]);
  
 
- const [users] = useState([
+ const [users, setUsers] = useState([
     { id: 1, name: "Matheus", age: 31 },
     { id: 2, name: "Joao", age: 28 },
  ])
@@ -31,7 +31,7 @@ const ListRender = () => {
 
         <ul>
             {users.map((user) => (
-                <li key={user.id}>{user.name} - {user.age}</li>
+                <li key={user.id}>{user.name} - {user.age} </li>
             ))}
         </ul>
         <button onClick={deleteRandom}>Delete random user</button>
