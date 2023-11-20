@@ -11,6 +11,9 @@ import CarDetails from './components/CarDetails.jsx';
 import Fragment from './components/Fragment.jsx';
 import Container from './components/Container.jsx';
 import ExecuteFunction from './components/ExecuteFunction.jsx';
+import Message from './components/Message.jsx';
+import ChangeMessageState from './components/ChangeMessageState.jsx';
+import UserDetails from './components/UserDetails.jsx';
 import { useState } from 'react';
 
 function App() {
@@ -23,11 +26,21 @@ function App() {
     {id: 3, brand: "Renault", color: "Azul", newCar: false, km:  234},
   ];
 
+  const pessoa =[
+    {id: 1, nome:"Matheus", idade:28, profissao:"Dev-Full-Stack", newPessoa:true},
+    {id: 2, nome:"Pedro", idade:15, profissao:"Dev-Back-End", newPessoa:false},
+    {id: 3, nome:"João", idade:18, profissao:"Dev-Front-End", newPessoa:true},
+  ];
+
   function showMessage(){
     console.log("Evento do componente pai!");
-  }
+  };
  
+const [message,setMessage] = useState("");
 
+const handleMessage = (msg) => {
+      setMessage(msg);
+};
 
   return (
    
@@ -75,6 +88,9 @@ function App() {
         />
       ))
     }
+
+
+
   {/* Fragment */}
     <Fragment propFragment="teste" />
     {/* children */}
@@ -88,10 +104,28 @@ function App() {
     {/* execute função */}
     <ExecuteFunction myFunction={showMessage} />
 
+    {/* state lift */}
+    <Message msg={message} />
+    <ChangeMessageState handleMessage={handleMessage} />
+
+
+    {
+      pessoa.map((entity) => (
+        <UserDetails 
+        key={entity.id}
+        nome={entity.nome}
+        idade={entity.idade}
+        profissao={entity.profissao}
+        newPessoa={entity.newPessoa}
+        
+        />
+      ))
+    }
+
       </div>
             
    
   );
 };
 
-export default App
+export default App;
