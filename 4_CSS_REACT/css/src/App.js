@@ -7,6 +7,8 @@ import {useState} from "react";
 function App() {
   const n = 15;
   const [name] = useState("Matheus");
+
+  const redTitle = true;
   return (
     <div className="App">
       {/* CSS GLOBAL */}
@@ -51,7 +53,13 @@ function App() {
      Teste nome
     </h2>
 
+    {/* Classe dinâmica */}
+    <h2 className={redTitle ? "red-title" : "title"}>
+        Este título vai ter classe dinâmica
+    </h2>
+
     </div>
+
   );
 }
 
