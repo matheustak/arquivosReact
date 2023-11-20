@@ -9,6 +9,7 @@ import ConditionalRender from './components/ConditionalRender.jsx';
 import ShowUserName from './components/ShowUserName.jsx';
 import CarDetails from './components/CarDetails.jsx';
 import Fragment from './components/Fragment.jsx';
+import Container from './components/Container.jsx';
 import { useState } from 'react';
 
 function App() {
@@ -67,8 +68,17 @@ function App() {
         />
       ))
     }
-
+  {/* Fragment */}
     <Fragment propFragment="teste" />
+    {/* children */}
+    <Container myValue="testing">
+      <p>E este é o conteúdo</p>
+    </Container>
+
+    <Container myValue="testing 2">
+      <p>E este é o conteúdo</p>
+    </Container>
+
       </div>
             
    
