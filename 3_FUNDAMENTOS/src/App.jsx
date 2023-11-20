@@ -3,9 +3,9 @@ import './App.css';
 
 //components
 import City from './assets/city.jpg';
-import ManageData from './components/ManageData.jsX';
-import ListRender from './components/ListRender.jsX';
-
+import ManageData from './components/ManageData.jsx';
+import ListRender from './components/ListRender.jsx';
+import ConditionalRender from './components/ConditionalRender.jsx';
 
 function App() {
  
@@ -34,6 +34,7 @@ function App() {
       
     <ListRender />
   
+    <ConditionalRender />
       </div>
        
    
