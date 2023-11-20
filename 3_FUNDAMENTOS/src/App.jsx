@@ -8,10 +8,11 @@ import ListRender from './components/ListRender.jsx';
 import ConditionalRender from './components/ConditionalRender.jsx';
 import ShowUserName from './components/ShowUserName.jsx';
 import CarDetails from './components/CarDetails.jsx';
+import Fragment from './components/Fragment.jsx';
 import { useState } from 'react';
 
 function App() {
-  const name = "Joaquin";
+  //const name = "Joaquin";
   const [userName] = useState("Maria");
 
   const cars =[
@@ -46,7 +47,7 @@ function App() {
     <ListRender />
   
     <ConditionalRender />
-
+    
     <ShowUserName name={userName}  />
 
     {/* destructuring */}
@@ -66,6 +67,8 @@ function App() {
         />
       ))
     }
+
+    <Fragment propFragment="teste" />
       </div>
             
    
