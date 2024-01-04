@@ -26,7 +26,7 @@ function App() {
         
         <h1>Oi, eu sou Matheus</h1>  
        
-        <span className='spanfraseLogo'>Escrevo sobre sistemas independentes ou lucrativos, estou cursando analise e desenvolvimento de sistemas.</span>  
+        <span className='spanfraseLogo'>Escrevo sobre sistemas independentes ou lucrativos, <br />estou cursando analise e desenvolvimento de sistemas.</span>  
         
         <p>Nesse momento estou trabalhando em hum projeto pessoal <br /> desenvolvendo meu portifólio blog do Matheus Rocha. 
         Saiba <br />mais <a className='linkblog' href='blog'>no blog →</a>  </p>

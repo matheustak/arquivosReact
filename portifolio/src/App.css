@@ -11,7 +11,7 @@
 
 .site-home-header{
   background-color: black;
-  height: 80%;
+  height: 690px;
   position: absolute;
   top: 0;
   left: 0;
@@ -34,19 +34,27 @@ img{
 }
 h1{
 color: white;
-font-family:'Lato';
+font: normal normal normal 12px/18px 'Helvetica Neue',Arial,sans-serif;
 margin-bottom: 0%;
+white-space: nowrap;
 
 }
 p{
   color: #818189;
-  margin: 24px auto 0;
-  text-align: center;
+  margin: 20px auto 0;
+  
   max-width: 500px;
+  white-space: nowrap;
+  font-size: 0.9em;
+  text-align: center;
+  
 }
 
 .spanfraseLogo{
-  color: white;
+  color: #818189;
+  text-align: center;
+
+ 
 }
 .site-nav {
 
