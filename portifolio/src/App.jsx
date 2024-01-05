@@ -6,21 +6,20 @@ function App() {
   return (
 
     <header className="site-home-header">
-    
-
-<nav className="site-nav">
-  <div className="site-nav-left">
-  <a className="site-nav-logo" href="matheus" display="block" > Matheus Rocha</a>
- 
+      
+      
+      
       <div className="site-nav-content">
         <ul className="nav" role="menu">
+        <li className="nav-home" role="menuitem"> <a href='matheus'>MATHEUS ROCHA</a></li>
+         <li className="nav-home" role="menuitem"> <a href='blog'>BLOGUE</a></li>
           <li className="nav-home" role="menuitem"> <a href='projetos'>PROJETOS</a></li>
           <li className="nav-home" role="menuitem"><a href='contatos'>CONTACT</a></li>
         </ul>
 
       </div>
-      </div>
-      </nav>
+     
+
       <div className='div-background'>
         <img src="src/imagens/Matheus.jpeg" alt="Perfil Matheus rocha" /> 
         
@@ -42,7 +41,7 @@ function App() {
        
       
       </div>   
-    </header>
+      </header>
 
      
 
