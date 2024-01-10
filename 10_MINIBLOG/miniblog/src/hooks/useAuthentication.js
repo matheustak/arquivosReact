@@ -28,7 +28,7 @@ export const useAuthentication = () => {
         }
     }
 
-
+// Register
     const createUser = async (data) => {
         checkIfIsCancelled();
 
@@ -66,18 +66,58 @@ return user;
         }
     
     };
+// Logout - sign out
+    const logout = () =>{
+        checkIfIsCancelled();
+        signOut(auth);
+    };
 
-    useEffect(() =>{
+
+    // Login - sign in
+
+    const login = async (data) => {
+        checkIfIsCancelled();
+    
+        setLoading(true);
+        setError(false);
+    
+        try {
+          await signInWithEmailAndPassword(auth, data.email, data.password);
+        } catch (error) {
+          console.log(error.message);
+          console.log(typeof error.message);
+          console.log(error.message.includes("user-not"));
+    
+          let systemErrorMessage;
+    
+          if (error.message.includes("user-not-found")) {
+            systemErrorMessage = "Usuário não encontrado.";
+          } else if (error.message.includes("wrong-password")) {
+            systemErrorMessage = "Senha incorreta.";
+          } else {
+            systemErrorMessage = "Ocorreu um erro, por favor tenta mais tarde.";
+          }
+    
+          console.log(systemErrorMessage);
+    
+          setError(systemErrorMessage);
+        }
+    
+        console.log(error);
+    
+        setLoading(false);
+      };
+    
+      useEffect(() => {
         return () => setCancelled(true);
-    },[]);
-
-
-    return{
+      }, []);
+    
+      return {
         auth,
         createUser,
         error,
+        logout,
+        login,
         loading,
-
-
+      };
     };
-};
