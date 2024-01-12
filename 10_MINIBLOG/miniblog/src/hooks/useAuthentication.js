@@ -118,6 +118,6 @@ return user;
         error,
         logout,
         login,
-        loading,
+       
       };
     };
