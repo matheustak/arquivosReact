@@ -1,0 +1,33 @@
+.home{
+    display: flex;
+ 
+}
+
+
+
+.text{
+    margin-left: 10%;
+    margin-right: alto;
+    margin-top: 20%;
+}
+
+
+
+@media (max-width: 576px) {
+    
+
+    .home{
+       flex-direction: column-reverse;
+    }
+
+    .text{
+      
+        text-align: center;
+        word-break: break-world; 
+    }
+    .imageContainer img{
+     height: auto;
+     width: 100%;
+    
+    }
+}

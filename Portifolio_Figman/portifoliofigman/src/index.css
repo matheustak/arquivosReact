@@ -1,0 +1,39 @@
+body{
+  background-color: #F6FCFF;
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+a,nav {
+  text-decoration: none;
+  background-color: transparent;
+  border: none;
+  color: #000;
+  transition: .4s;
+  font-size: 1em;
+  cursor: pointer;
+  font-family:"Montserrat", sans-serif;
+
+
+}
+
+
+
+h1{
+ color: #445964;
+ 
+}
+
+.container{
+
+  background-color: #f8d7da;
+  border:1px solid #f5c6cb;
+  padding: 5px;
+  border-radius: 5px;
+}
+
