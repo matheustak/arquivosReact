@@ -8,6 +8,7 @@
 .brand{
     display: flex;
     font-size: 1.2em;
+    margin-left: 2.1em;
     
   
 }
@@ -22,14 +23,15 @@
     list-style: none;
   
 }
-
+.links_list{
+    margin-right: 2em;
+    
+}
 img{
  margin-right: 10px;
 }
 
-.links_list{
-    margin-right: 1em;
-}
+
 
 .links_list li a{
     padding: 0.4em .6em;
@@ -52,6 +54,7 @@ img{
     .links_list li{
         padding-top: 15px;
        text-align: center;
+      
     }
 
     
@@ -65,7 +68,11 @@ img{
     }
     .brand img {
         margin-right: 0px; /* Reduz a margem direita da imagem */
+        
     }
     
+    .brand{
+        margin-left: 0em;
+    }
     
 }

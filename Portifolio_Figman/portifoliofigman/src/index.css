@@ -24,16 +24,25 @@ a,nav {
 
 
 
-h1{
+h1,h3, p{
  color: #445964;
  
 }
+span{
+  color:darkgrey;
+}
+
 
 .container{
 
-  background-color: #f8d7da;
-  border:1px solid #f5c6cb;
+  background-color: #05f6d6;
+  background-color: #50D7D7;
+  background-color: #F6FCFF;
   padding: 5px;
   border-radius: 5px;
+
+
 }
+
+
 

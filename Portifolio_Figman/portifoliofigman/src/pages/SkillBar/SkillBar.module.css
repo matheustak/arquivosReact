@@ -1,0 +1,102 @@
+.skillsbar {
+   
+    background-color: #ddd; /* Grey background */
+    
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid #445964;
+
+  }
+  .skillsbar > * {
+    flex: 0 0 calc(40.33% - 20px); /* Largura de 33.33% para cada item, com margem de 20px entre os itens */
+    margin: 40px; /* Margem entre os itens */
+    text-align:left;
+}
+  
+.cent{
+    display: flex;
+    flex-direction: column;
+   
+  
+}
+
+.polignosWrapper {
+    display: flex; /* Isso garante que os dois conjuntos de elementos .polignoContainer fiquem lado a lado */
+    
+   
+}
+
+
+.polignoContainer {
+    display: flex; /* Exibe os elementos .poligno lado a lado */
+    margin-left: 30px;
+    
+}
+
+  .loyalt {
+    text-align: right; /* Right-align text */
+    padding-top: 10px; /* Add top padding */
+    padding-bottom: 10px; /* Add bottom padding */
+    color: #445964; /* White text color */
+   
+  }
+
+
+.css {width: 80%; background-color: #2196F3;} /* Blue */
+.js {width: 65%; background-color: #f44336;} /* Red */
+
+
+
+
+
+.poligno {
+    display: flex;
+    
+    background-color:blue;
+    padding: 0px;
+    text-align: center;
+    margin-bottom: 20px;
+    width: 20px;
+    height: 10px;
+    background: #6C7A89;
+   
+    position: relative;
+    margin-right: 10px
+}
+
+.poligno:before,
+.poligno:after {
+    content: "";
+    width: 0px;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    position: absolute;
+    bottom: 100%;
+}
+
+.poligno:before {
+    border-bottom: 5px solid #6C7A89;
+}
+
+.poligno:after {
+    border-top: 5px solid #6C7A89;
+    top: 100%;
+}
+
+
+@media (max-width: 576px) {
+    .polignosWrapper{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+   
+    
+    .polignosWrapper p {
+       color: #445964;
+        margin-left: 20px;
+       
+    }
+    
+
+}

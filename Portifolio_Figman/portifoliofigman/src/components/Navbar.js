@@ -16,7 +16,7 @@ const Navbar = () => {
         <NavLink to="/"  className={styles.brand} >
       
        <img src={minhaImagem}alt="Logo"/>
-        <h1> Matheus Rocha</h1>
+        <h1> Matheus <span>Rocha</span></h1>
       
         </NavLink>
 
@@ -26,9 +26,12 @@ const Navbar = () => {
             <NavLink to="/" className={({isActive}) => (isActive ? styles.active : "")} >Home</NavLink>
             </li>
           
-          
-             <li>
-            <NavLink to="/portifolio" className={({isActive}) => (isActive ? styles.active : "")} >Portifólio</NavLink>
+            <li>
+            <NavLink to="/sobre" className={({isActive}) => (isActive ? styles.active : "")}>Sobre</NavLink>
+            </li>
+                  
+            <li>
+            <NavLink to="/resumo" className={({isActive}) => (isActive ? styles.active : "")}>Resumo</NavLink>
             </li>
 
             <li>
@@ -38,12 +41,15 @@ const Navbar = () => {
            
          
 
-            <li>
-            <NavLink to="/resumo" className={({isActive}) => (isActive ? styles.active : "")}>Resumo</NavLink>
-            </li>
+           
          
             <li>
             <NavLink to="/contato" className={({isActive}) => (isActive ? styles.active : "")}>Contato</NavLink>
+            </li>
+
+
+            <li>
+            <NavLink to="/portifolio" className={({isActive}) => (isActive ? styles.active : "")} >Portifólio</NavLink>
             </li>
            
      </ul>

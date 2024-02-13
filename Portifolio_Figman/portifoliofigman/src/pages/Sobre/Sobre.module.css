@@ -1,0 +1,34 @@
+.page{
+    display: flex;
+   flex-direction: column;
+    
+}
+
+
+
+
+.fotoperfil ,ifotog{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+   
+  
+}
+.fotoperfil{
+    display: block;
+    width: 100%;  
+    word-break: break-world; 
+    text-align: center;
+}
+.skills{
+    margin-top: 10px;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
