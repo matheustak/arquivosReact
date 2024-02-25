@@ -30,18 +30,7 @@ const Navbar = () => {
             <NavLink to="/sobre" className={({isActive}) => (isActive ? styles.active : "")}>Sobre</NavLink>
             </li>
                   
-            <li>
-            <NavLink to="/resumo" className={({isActive}) => (isActive ? styles.active : "")}>Resumo</NavLink>
-            </li>
-
-            <li>
-            <NavLink to="/servico" className={({isActive}) => (isActive ? styles.active : "")}>Serviços</NavLink>
-            </li>
-                  
-           
-         
-
-           
+          
          
             <li>
             <NavLink to="/contato" className={({isActive}) => (isActive ? styles.active : "")}>Contato</NavLink>

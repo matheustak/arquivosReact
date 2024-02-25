@@ -1,14 +1,14 @@
 .page{
-    display: flex;
-   flex-direction: column;
+     display: flex;
+     flex-direction: column;
     
 }
 
 
 
 
-.fotoperfil ,ifotog{
-    display: block;
+.foto  {
+   margin-top: 2.0em;
     margin-left: auto;
     margin-right: auto;
     
@@ -24,11 +24,40 @@
 .skills{
     margin-top: 10px;
     text-align: center;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    
 }
 
 
 
 
+.vectorgrid{
+    text-align: center;
+    margin-top: 10%;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns:repeat(auto-fill, 300px);
+    
+    gap: 50px;
+    align-items: center;
+    justify-items: center;
+   
+    justify-content: center;
+ 
+}
+.image{
+    margin-top: 10px;
+    height: 40px;
+    width: 36px;
+    
+  
+}
+
+
+ 
+  .grid3Item{
+    height: 200px;
+    width: 200px;
+  
+
+  }
