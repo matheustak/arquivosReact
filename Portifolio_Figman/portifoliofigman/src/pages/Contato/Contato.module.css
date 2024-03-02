@@ -1,0 +1,29 @@
+.grid{
+    text-align: center;
+    display:grid;
+    margin-top: 6%;
+    justify-content: center;
+   
+     height: 100%;
+     width: 100%;
+    gap: 50px;
+    grid-template-columns:repeat(auto-fill, 300px);
+    align-items: center;
+    justify-items: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.link{
+    word-break: break-world; 
+    color: blue;
+}
+
+.grid3Item{
+    height: 200px;
+    width: 250px;
+}

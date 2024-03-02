@@ -1,4 +1,7 @@
-import './App.css';
+
+import styles from './App.css';
+
+
 import {BrowserRouter , Routes, Route, Navigate} from "react-router-dom";
 
 
@@ -16,32 +19,40 @@ import Footer from  "./components/Footer.js";
 
 
 
+
+
+
 function App() {
 
-
+  
 
   return (
-    <div className="App">
+    <div className={`${styles.App}`}>
+   
     <BrowserRouter>
-        
+    
 
         <Navbar />
         <div className='container'>
           <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Home/> } />
           <Route path="/Sobre" element={<Sobre />} />
           <Route path="/Portifolio" element={<Portifolio />} />
           <Route path="/Contato" element={<Contato />} />
-          </Routes>
          
-
+          </Routes>
+        
+         
         </div>
        
         <Footer />
        
+     
         </BrowserRouter>
+      
     </div>
     
+  
   );
 }
 

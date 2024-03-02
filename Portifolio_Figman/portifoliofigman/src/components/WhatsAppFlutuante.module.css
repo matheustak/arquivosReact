@@ -1,0 +1,55 @@
+.whatsanimated{
+
+    cursor: pointer;
+        font-size: 16px;
+        line-height: 120%;
+        color: inherit;
+        font-family: Helvetica Neue, Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-weight: 400;
+        border: 0;
+        
+       
+    }
+    .whatsanimated img{
+        height: auto;
+       width: 100px;
+    }
+
+    @keyframes tada {
+        0% {
+            transform: scale(1);
+        }
+        10%, 20% {
+            transform: scale(0.9) rotate(-3deg);
+        }
+        30%, 50%, 70%, 90% {
+            transform: scale(1.1) rotate(3deg);
+        }
+        40%, 60%, 80% {
+            transform: scale(1.1) rotate(-3deg);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+    
+    .tada {
+        animation-name: tada;
+        animation-duration: 1s;
+        animation-fill-mode: both;
+
+    }
+    
+.whatsfloat {
+    position: fixed;
+    right: 10px;
+    bottom: 0;
+    z-index: 99;
+    transition: all .4s ease-in-out;
+}
+                                   
+    
+   
+.whatsfloat:hover{scale:1.1} 
+    
+    

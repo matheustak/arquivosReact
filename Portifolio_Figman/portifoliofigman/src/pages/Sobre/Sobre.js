@@ -9,15 +9,20 @@ import vec from "../Imagens/Vectort.svg" ;
 
 import styles from "./Sobre.module.css";
 
-
+import WhatsAppFlutuante from  "../../components/WhatsAppFlutuante.js";
 
 
 
 
 
 const Sobre = () => {
+  
+
+
+
+
   return (
-    <div className={styles.page}>
+    <div className={`${styles.page} `}>
   
     <div className={styles.fotoperfil}>
  
@@ -61,11 +66,20 @@ const Sobre = () => {
 
           </div>
 
+          <div className={styles.grid3Item}>
+          <h1>CSS</h1>
+            <img  className={styles.image} src={vector} alt="vector" />
+            <img className={styles.image}  src={vector} alt="vector" />
+            <img className={styles.image}  src={vector} alt="vector" />
+            <img className={styles.image}  src={vec} alt="vector" />
+
+          </div>
+
         
           </div>
         
         
-
+          <WhatsAppFlutuante />
            
           </div>
 

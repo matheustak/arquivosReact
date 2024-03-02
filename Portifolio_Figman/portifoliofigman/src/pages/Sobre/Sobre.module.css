@@ -24,6 +24,7 @@
 .skills{
     margin-top: 10px;
     text-align: center;
+  
     
 }
 
@@ -43,12 +44,14 @@
     justify-items: center;
    
     justify-content: center;
- 
+   
 }
 .image{
     margin-top: 10px;
     height: 40px;
     width: 36px;
+               
+    
     
   
 }
@@ -57,7 +60,9 @@
  
   .grid3Item{
     height: 200px;
-    width: 200px;
-  
+    width: 250px;
+                    
+    
 
   }
+
