@@ -1,39 +1,6 @@
 
-  .image {
-    margin-right: 100%;
-    max-width: 100%;
-    display: block;
-    margin: auto;
-    
-  }
- 
-  .grid3Item{
-    height: 200px;
-    width: 200px;
-   
-    
-  }
-
-
-
-
-  .grid3 {
-
-    text-align: center;
-    margin-top: 10%;
-    width: 100%;
-    height: 100%;
-    display: grid;
-    grid-template-columns:repeat(auto-fill, minmax(300px, 1fr));
-    
-    gap: 20px;
-    align-items: center;
-    justify-items: center;
-   
-    justify-content: center;
  
 
-  }
 
-  
+
   
