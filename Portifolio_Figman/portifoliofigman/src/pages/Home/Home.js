@@ -38,12 +38,12 @@ const Home = () => {
 
 
        
-        <a href="https://github.com/matheustak" target="_blank">
+        <a href="https://github.com/matheustak" target="_blank" rel="noreferrer">
            <img src={minhaImagem1}  alt="Segua-me no github" />
         </a>
 
 
-        <a href="https://twitter.com/intent/follow?original_referer=https%3A%2F%2FAlecrimRoc3694.com%2F&amp;ref_src=twsrc%5Etfw%7Ctwcamp%5Ebuttonembed%7Ctwterm%5Efollow%7Ctwgr%5AlecrimRoc3694&amp;region=follow_link&amp;screen_name=AlecrimRoc3694" target="_blank"> 
+        <a href="https://twitter.com/intent/follow?original_referer=https%3A%2F%2FAlecrimRoc3694.com%2F&amp;ref_src=twsrc%5Etfw%7Ctwcamp%5Ebuttonembed%7Ctwterm%5Efollow%7Ctwgr%5AlecrimRoc3694&amp;region=follow_link&amp;screen_name=AlecrimRoc3694" target="_blank" rel="noreferrer"> 
          <img className={styles.twitter} src={minhaImagem2}  alt="Segua-me no twitter"  />
         </a>
        
