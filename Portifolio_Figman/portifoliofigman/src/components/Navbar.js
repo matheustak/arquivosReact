@@ -31,6 +31,10 @@ const Navbar = () => {
             </li>
                   
           
+            <li>
+            <NavLink to="/Blog" className={({isActive}) => (isActive ? styles.active : "")}>Blog</NavLink>
+            </li>
+
          
             <li>
             <NavLink to="/contato" className={({isActive}) => (isActive ? styles.active : "")}>Contato</NavLink>

@@ -10,6 +10,7 @@ import Home from  "./pages/Home/Home.js";
 import Sobre from "./pages/Sobre/Sobre.js";
 import Portifolio from "./pages/Projetos/Projetos.js";
 import Contato from "./pages/Contato/Contato.js";
+import Contato from "./pages/Blog/Blog.js";
 
 //Components
 import Navbar from "./components/Navbar.js";
@@ -38,6 +39,7 @@ function App() {
           <Route path="/" element={<Home/> } />
           <Route path="/Sobre" element={<Sobre />} />
           <Route path="/Portifolio" element={<Portifolio />} />
+          <Route path="/Blog" element={<Blog />} />
           <Route path="/Contato" element={<Contato />} />
          
           </Routes>
