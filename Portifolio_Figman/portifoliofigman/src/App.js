@@ -10,7 +10,7 @@ import Home from  "./pages/Home/Home.js";
 import Sobre from "./pages/Sobre/Sobre.js";
 import Portifolio from "./pages/Projetos/Projetos.js";
 import Contato from "./pages/Contato/Contato.js";
-import Contato from "./pages/Blog/Blog.js";
+import Blog from "./pages/Blog/Blog.js";
 
 //Components
 import Navbar from "./components/Navbar.js";
