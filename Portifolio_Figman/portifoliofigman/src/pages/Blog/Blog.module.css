@@ -1,0 +1,17 @@
+.blog{
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+   display: flex;
+}
+
+
+
+
+.iframe{
+    height:650vh;
+    width: 400vh;
+    
+    background-color: black;
+}
+

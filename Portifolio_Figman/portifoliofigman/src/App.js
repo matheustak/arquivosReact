@@ -32,7 +32,6 @@ function App() {
    
     <BrowserRouter>
     
-
         <Navbar />
         <div className='container'>
           <Routes>
@@ -41,7 +40,7 @@ function App() {
           <Route path="/Portifolio" element={<Portifolio />} />
           <Route path="/Blog" element={<Blog />} />
           <Route path="/Contato" element={<Contato />} />
-         
+        
           </Routes>
         
          

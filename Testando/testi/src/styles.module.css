@@ -1,0 +1,74 @@
+.block {
+    width: 80vh;
+    margin-bottom: 20px;
+    
+    padding: 15px;
+    border-radius: 5px;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* Centraliza horizontalmente */
+    justify-content: center;  /* Centraliza verticalmente */
+   
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* Centraliza horizontalmente */
+    justify-content: center;  /* Centraliza verticalmente */
+    min-height: 100vh;  /* Altura mínima da viewport */
+    min-width: 100vh;
+    padding: 20px;  /* Espaçamento interno */
+  }
+  
+  .block p,
+  .block h1,
+  .block pre {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .block p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  .block h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .block pre {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+    width: 80vh;
+    max-height: 250vh;
+    border: 1px solid #ddd;
+    white-space: pre-wrap; 
+  }
+
+  .textbutton{
+   display:grid;
+   width: 100vh;
+  
+  
+  }
+
+  .block{
+    position: relative;
+  }
+  .copyButton {
+    position: absolute; /* Defina a posição como absoluta */
+    top: 0; /* Alinhe o botão no topo */
+    right: 0; /* Alinhe o botão à direita */
+    z-index: 1; /* Garanta que o botão esteja acima do conteúdo do bloco */
+    padding: 4px 8px; /* Adicione algum padding para melhor aparência */
+    background-color: #f0f0f0; /* Cor de fundo do botão */
+    border: none; /* Remova a borda */
+    cursor: pointer; /* Transforme o cursor em pointer */
+  }

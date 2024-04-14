@@ -1,0 +1,50 @@
+{
+  "kind": "collectionType",
+  "collectionName": "comentarios",
+  "info": {
+    "singularName": "comentario",
+    "pluralName": "comentarios",
+    "displayName": "Comentario",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "Conteudo": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "text"
+    },
+    "Autor": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    },
+    "Date": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "datetime"
+    },
+    "post": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::post.post",
+      "inversedBy": "comentarios"
+    }
+  }
+}
